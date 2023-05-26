@@ -30,6 +30,48 @@ router.get('/', async (req, res) => {
     }
 });
 
+// route to login page
+router.get('/login', (req, res) => {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/');
+      return;
+    }
+
+    res.render('login');
+});
+
+// route to signup page
+router.get('/signup', (req, res) => {
+    res.render('signup');
+});
+
+// route to dashboard
+router.get('/dashboard', withAuth, async (req, res) => {
+    try {
+        const userData = await User.findByPk(req.session.user_id, {
+            attributes: { exclude: ['password'] },
+            include: [{ model: Post }, {model: Comment}],
+        });
+        console.log(userData)
+
+        const user = userData.get({ plain: true });
+
+    // If the user is not logged in, redirect the request to the login page
+        if (!req.session.logged_in) {
+            res.redirect('/login');
+            return;
+          }
+          console.log(user)
+        res.render('dashboard', {
+            ...user, 
+            logged_in: true
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 
   
 module.exports = router;
