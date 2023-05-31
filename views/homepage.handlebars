@@ -1,11 +1,12 @@
 {{#each posts as |post|}}
-<div class="post-main">
+<div class="card">
   <div class="post-header">
   <p class ="post-title">{{post.title}}</p> 
     <p class="post-author"> {{user.username}} on {{format_date post.timestamp}}</p>
   </div>
   <div class="post-body">
     <p class="post-text">{{post.post_content}}</p>
+    <br>
     <a href="/posts/{{post.id}}" class="btn btn-primary" id="view-post" >View Post</a>
   </div>
 </div>

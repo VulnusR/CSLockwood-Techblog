@@ -22,6 +22,8 @@ i {
     height: 80%;
     width: 100%;
 
+    overflow-y: scroll;
+
     
 }
 
