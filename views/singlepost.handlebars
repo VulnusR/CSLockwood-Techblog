@@ -1,0 +1,29 @@
+<h2>{{post.title}}</h2>
+<h5> {{post.user.username}} on {{format_date post.timestamp}} </h5>
+  <div class="card">
+    <div class="card-body main-card">
+      <p class="card-text main-card-text">{{post.post_content}}</p>
+        
+      <form>
+        <div class="form-group">
+          <input type="hidden" id="post-id" value="{{post.id}}" />
+          <textarea class="form-control" id="new-comment" placeholder="Write a Comment" rows="3"></textarea>
+        </div>
+      </form>
+    <a href="#" class="btn-primary" id="add-comment">Add a Comment</a>
+  </div>
+</div>
+
+<br>
+<br>
+
+{{#each post.comments as |comment|}}
+      <div class="card">
+        <div class="card-body comment-card">
+          <p class ="card-text" id="comment-user">{{comment.user.username}} on {{format_date comment.timestamp}}</p>
+          <p class="card-text">{{comment.comment_content}}</p>
+        </div>
+      </div>
+{{/each}}
+
+<script src="../js/addcomment.js"></script>
