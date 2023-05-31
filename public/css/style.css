@@ -157,6 +157,7 @@ font-family: 'Libre Baskerville', serif;
 
     color: goldenrod;
 
+
 }
 
 .sign-in-title {
@@ -175,6 +176,55 @@ font-family: 'Libre Baskerville', serif;
 .btn-primary:hover {
     color: gold;
     background-color: rgb(172, 0, 0) ;
+}
+
+/* Dashboard */
+
+.card {
+    height: 25%;
+    width: 25%;
+    background-color: rgb(94, 3, 3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Libre Baskerville', serif;
+
+    
+    border-style: solid;
+    border-radius: 200px;
+    border-width: 2px;
+    border-color: goldenrod;
+    box-shadow: 15px 15px 35px 3px rgb(255, 255, 255);
+
+    color: goldenrod;
+}
+
+
+.edit-form{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(94, 3, 3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Libre Baskerville', serif;
+
+    
+    border-style: solid;
+    border-radius: 200px;
+    border-width: 2px;
+    border-color: goldenrod;
+    box-shadow: 15px 15px 35px 3px rgb(255, 255, 255);
+
+    color: goldenrod;
+
+
 }
 
 

@@ -1,0 +1,19 @@
+
+<form class="edit-form">
+    <div class="form-group">
+        <input type="hidden" id="post-id" value="{{post.id}}" />
+        <input type="text" class="form-control" id="post-title" value="{{post.title}}">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <textarea class="form-control" id="post-content"rows="10">{{post.post_content}}</textarea>
+    </div> 
+</form>
+
+<button type="button" class="btn-primary" id="update-button">Update</button>
+<br>
+<button type="button" class="btn-primary" id="delete-button">Delete</button>
+
+
+<script src="/js/editpost.js"></script>
