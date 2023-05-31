@@ -2,7 +2,107 @@
 
 body {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+    
 }
 
+/* fonts for reference 
+
+
+font-family: 'EB Garamond', serif;
+font-family: 'Libre Baskerville', serif;
+
+*/
+
 /* Header */
+
+.header-alpha-parent {
+    height: 20%;
+    width: 100%;
+    background-color: black;
+}
+
+.header-upper-parent {
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.account-btn-parent {
+    width: 100%;
+    height: 100%;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.account-btn {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+
+.header-lower-parent {
+    height: 80%;
+    width: 100%;
+    background-color:rgb(40, 39, 39);
+    display: flex;
+
+    border-top: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: gold; 
+}
+
+.header-lower-left { 
+    height: 100%;
+    width: 25%;
+}
+
+.header-main-text-parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.header-site-title {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 8vh;
+}
+
+.header-hover:hover {
+    color: goldenrod;
+}
+
+.header-lower-right {
+    height: 100%;
+    width: 75%;
+}
+
+.dashboard-parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 85%;
+}
+
+.dashboard-text {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 3vh;
+}
+
+
+
+

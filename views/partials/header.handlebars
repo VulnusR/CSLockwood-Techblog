@@ -1,0 +1,34 @@
+<div class="header-alpha-parent">
+    <div class="header-upper-parent">
+        {{#if logged_in}}
+
+            <a class="account-btn-parent" href="/">
+                <h2 class="account-btn header-hover" id="logout">Logout</h1>
+            </a>
+            
+
+            {{else}}
+
+            <a class="account-btn-parent" href="/login">
+                <h2 class="account-btn header-hover" id="login">Login</h1>
+            </a>
+ 
+        {{/if}}
+    </div>
+ 
+    <div class="header-lower-parent">
+        <div class="header-lower-left">
+            <a class="header-main-text-parent" href="/">
+                <h1 class="header-site-title header-hover">Vulnus's Blog</h1>
+            </a>
+
+        </div>
+
+        <div class"header-lower-right">
+            <a class="dashboard-parent" href="/dashboard">
+            <h2 class="dashboard-text header-hover">Dashboard</h1>
+            </a>
+
+        </div>
+    </div> 
+</div>
