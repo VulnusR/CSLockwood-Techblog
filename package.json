@@ -1,11 +1,16 @@
 {
   "name": "cslockwood-techblog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mod 14",
   "main": "server.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +23,15 @@
   },
   "homepage": "https://github.com/VulnusR/CSLockwood-Techblog#readme",
   "dependencies": {
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "connect-session-sequelize": "^7.1.7",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
     "express-session": "^1.17.3",
     "mysql2": "^3.3.2",
-    "sequelize": "^6.31.1"
+    "path": "^0.12.7",
+    "sequelize": "^6.31.1",
+    "serve": "^14.2.0"
   }
 }
